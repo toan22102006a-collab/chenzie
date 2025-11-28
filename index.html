@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chenzie 🎂</title>
+    <link rel="stylesheet" href="happy.css" />
+  </head>
+  <body>
+    <div id="effect-container">
+      <div id="heart-char-background"></div>
+    </div>
+
+    <div class="main-content">
+      <div class="orbit-container">
+        <div class="ring">
+          <div class="sat" data-i="0">
+            <img src="chen1.jpg" alt="Photo 1" />
+          </div>
+          <div class="sat" data-i="1">
+            <img src="chen2.jpg" alt="Photo 2" />
+          </div>
+          <div class="sat" data-i="2">
+            <img src="chen3.jpg" alt="Photo 3" />
+          </div>
+          <div class="sat" data-i="3">
+            <img src="chen4.jpg" alt="Photo 4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- HEART LIGHT PATH -->
+      <div class="heart-dots">
+        <!-- 40 dots -->
+        <div class="dot" style="--i: 0"></div>
+        <div class="dot" style="--i: 1"></div>
+        <div class="dot" style="--i: 2"></div>
+        <div class="dot" style="--i: 3"></div>
+        <div class="dot" style="--i: 4"></div>
+        <div class="dot" style="--i: 5"></div>
+        <div class="dot" style="--i: 6"></div>
+        <div class="dot" style="--i: 7"></div>
+        <div class="dot" style="--i: 8"></div>
+        <div class="dot" style="--i: 9"></div>
+        <div class="dot" style="--i: 10"></div>
+        <div class="dot" style="--i: 11"></div>
+        <div class="dot" style="--i: 12"></div>
+        <div class="dot" style="--i: 13"></div>
+        <div class="dot" style="--i: 14"></div>
+        <div class="dot" style="--i: 15"></div>
+        <div class="dot" style="--i: 16"></div>
+        <div class="dot" style="--i: 17"></div>
+        <div class="dot" style="--i: 18"></div>
+        <div class="dot" style="--i: 19"></div>
+        <div class="dot" style="--i: 20"></div>
+        <div class="dot" style="--i: 21"></div>
+        <div class="dot" style="--i: 22"></div>
+        <div class="dot" style="--i: 23"></div>
+        <div class="dot" style="--i: 24"></div>
+        <div class="dot" style="--i: 25"></div>
+        <div class="dot" style="--i: 26"></div>
+        <div class="dot" style="--i: 27"></div>
+        <div class="dot" style="--i: 28"></div>
+        <div class="dot" style="--i: 29"></div>
+        <div class="dot" style="--i: 30"></div>
+        <div class="dot" style="--i: 31"></div>
+        <div class="dot" style="--i: 32"></div>
+        <div class="dot" style="--i: 33"></div>
+        <div class="dot" style="--i: 34"></div>
+        <div class="dot" style="--i: 35"></div>
+        <div class="dot" style="--i: 36"></div>
+        <div class="dot" style="--i: 37"></div>
+        <div class="dot" style="--i: 38"></div>
+        <div class="dot" style="--i: 39"></div>
+      </div>
+
+      <!-- banh kem-->
+      <div id="cake-container">
+        <div id="cake-base" class="cake-part"></div>
+        <div id="cake-layer-bottom" class="cake-part"></div>
+        <div id="cake-layer-middle" class="cake-part"></div>
+        <div id="cake-layer-top" class="cake-part"></div>
+        <div id="cake-cream" class="cake-part"></div>
+        <div id="cake-candle" class="cake-part"></div>
+        <!-- <div id="cake-flame" class="cake-part"></div> -->
+        <div id="cake-flame" class="cake-part">🔥</div>
+
+        <!-- Canvas kem chảy -->
+        <canvas
+          id="cream-canvas"
+          width="260"
+          height="120"
+          style="
+            position: absolute;
+            bottom: 140px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+          "
+        >
+        </canvas>
+
+        <!-- Trái tim chấm -->
+        <div class="heart-dots" id="heart-dots"></div>
+      </div>
+
+      <!-- 3 doan van ban-->
+      <div class="message-wrapper">
+        <h1 id="birthday-message"></h1>
+        <h2 id="birthday-name"></h2>
+        <h3 id="birthday-date"></h3>
+      </div>
+    </div>
+
+    <script src="happy.js"></script>
+  </body>
+</html>
